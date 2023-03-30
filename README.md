@@ -1,2 +1,3 @@
-# C-Long-Questions-
-C++ long questions that involve operator overloading and inheritance etc.
+# C-Long-Questions(ADP-IT )-Punjab University
+This include long question that appear in ADP-IT Exams.
+
