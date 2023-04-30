@@ -10,13 +10,13 @@ class publication{
 			void getdata(){
 				cout<<"Enter the Title : ";
 				cin>>title;
-				cout<<"Enter Price : "<<endl;
+				cout<<"Enter Price : ";
 				cin>>price;
 			}
 			void putdata()
 			{
-				cout<<"The Title is : "<<title;
-				cout<<"\nThe Price is : "<<price;
+				cout<<"The Title is : "<<title<<endl;
+				cout<<"\nThe Price is : "<<price<<endl;
 			}
 		
 };
@@ -26,13 +26,13 @@ class Book : public publication{
 		public :
 			void getdata(){
 				publication::getdata();
-				cout<<"Enter Pages of The Book : "<<endl;
+				cout<<"Enter Pages of The Book : ";
 				cin>>pagecount;
 			}
 			void putdata()
 			{
 				publication::putdata();
-				cout<<"\nThe Pages are : "<<pagecount;
+				cout<<"\nThe Pages are : "<<pagecount<<endl;
 			}
 	
 };
@@ -42,22 +42,24 @@ class Tape : public publication{
 		public :
 			void getdata(){
 				publication::getdata();
-				cout<<"Enter PlayTime : "<<endl;
+				cout<<"Enter PlayTime of Audio is : "<<endl;
 				cin>>playtime;
 			}
 			void putdata()
 			{
 				publication::putdata();
-				cout<<"\nThe PlayTime is : "<<playtime;
+				cout<<"\nThe PlayTime of Audio: "<<playtime;
 			}
 		
 };
 main()
 {
 	Book b;
+	cout<<"For Book"<<endl;
 	b.getdata();
 	b.putdata();
 	Tape t;
+	cout<<"For Tape"<<endl;
 	t.getdata();
 	t.putdata();
 	
